@@ -51,15 +51,18 @@
         <img src="images/equipo.png" alt="Equipo de la película" class="img-fluid" style= "margin-left: 300px">
     </section>
 
-    <section id="videojuego" class="container py-4">
+    <section id="videojuego" class="container py-4 text-center">
         <h2>Videojuego</h2>
         <p>El videojuego Need for Speed fue la inspiración principal para la película...</p>
-        <img src="images/videojuego.jpg" alt="Videojuego Need for Speed" class="img-fluid" style="margin-left: 300px">
+        <img src="images/videojuego.jpg" alt="Videojuego Need for Speed" class="img-fluid" style="margin-left: 0px">
         
-        <!-- Botón para abrir el modal -->
-        <button id="openModal" class="btn btn-primary mt-4" data-bs-toggle="modal" data-bs-target="#gameModal">
-            Jugar al Videojuego
-        </button>
+        <!-- Contenedor para el botón debajo de la imagen -->
+        <div class="mt-4">
+            <!-- Botón para abrir el modal, centrado -->
+            <button id="openModal" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gameModal">
+                Jugar al Videojuego
+            </button>
+        </div>
     </section>
 
     <!-- Modal con iframe -->
@@ -72,7 +75,7 @@
                 </div>
                 <div class="modal-body">
                     <!-- Asegúrate de que la ruta al index del juego sea correcta -->
-                    <iframe id="gameIframe" src="tpfinalparte2/index.html" frameborder="0" style="width: 690px; height: 500px;"></iframe>
+                    <iframe id="gameIframe" src="tpfinalparte2/index.html" frameborder="0" style="width: 100%; height: 500px;"></iframe>
                 </div>
             </div>
         </div>
@@ -90,3 +93,4 @@
     </script>
 </body>
 </html>
+
